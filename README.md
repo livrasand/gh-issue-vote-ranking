@@ -1,5 +1,7 @@
 # 📊 GitHub Issue Vote Ranking
 
+[![Marketplace](https://img.shields.io/badge/GitHub%20Action-Marketplace-blue?logo=github)](https://github.com/marketplace/actions/github-issue-vote-ranking)
+
 **Take a look at the pulse of your community.**
 This GitHub Action ranks your issues based on reactions 👍 / 👎 and automatically updates a central issue with the ranking. It also publishes comments with a summary of votes on each individual issue.
 
