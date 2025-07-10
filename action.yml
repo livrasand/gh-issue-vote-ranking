@@ -1,0 +1,25 @@
+name: GitHub Issue Vote Ranking
+description: Effortlessly track and rank GitHub issues by community votes (+1/-1).
+
+branding:
+  icon: bar-chart
+  color: purple
+
+inputs:
+  token:
+    description: GitHub Token (with repo access)
+    required: true
+  ranking_issue_number:
+    description: The issue number where the live leaderboard comment will be posted or updated
+    required: true
+  ignore_label:
+    description: Label name to exclude issues from the vote ranking
+    required: false
+  language:
+    description: Language for messages (en or es)
+    required: false
+    default: en
+
+runs:
+  using: "node20"
+  main: "index.js"
