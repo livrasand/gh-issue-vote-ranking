@@ -26,19 +26,23 @@ name: GitHub Issue Vote Ranking
 
 on:
   schedule:
-    - cron: '0 */2 * * *'
+    - cron: "0 */2 * * *"
   workflow_dispatch:
 
+permissions:
+  issues: write
+  pull-requests: write
+
 jobs:
-vote-ranking:
-runs-on: ubuntu-latest
-steps:
-- uses: livrasand/gh-issue-vote-ranking@v1.0.1
-with:
-token: ${{ secrets.GITHUB_TOKEN }}
-ranking_issue_number: "1" # Issue number you use to display the ranking
-# ignore_label: "ignore-issue" # Optional
-# language: "es" # Optional: "en" (default) or "es"
+  vote-ranking:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: livrasand/gh-issue-vote-ranking@v1.0.1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ranking_issue_number: "1" 
+          ignore_label: "ignore-issue"  
+          language: "en"
 ````
 
 ---
