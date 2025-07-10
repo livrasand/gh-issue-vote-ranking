@@ -25,8 +25,9 @@ This GitHub Action ranks your issues based on reactions 👍 / 👎 and automati
 name: GitHub Issue Vote Ranking
 
 on:
-reaction:
-types: [created]
+  schedule:
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
 
 jobs:
 vote-ranking:
