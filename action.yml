@@ -1,9 +1,9 @@
 name: GitHub Issue Vote Ranking
-description: Effortlessly track and rank GitHub issues by community votes (+1/-1).
+description: Effortlessly track and rank GitHub issues by community votes (👍/👎).
 
 branding:
-  icon: bar-chart
-  color: purple
+  icon: bar-chart-2
+  color: white
 
 inputs:
   token:
@@ -22,4 +22,4 @@ inputs:
 
 runs:
   using: "node20"
-  main: "index.js"
+  main: "dist/index.js"
