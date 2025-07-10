@@ -5,17 +5,17 @@ This GitHub Action ranks your issues based on reactions 👍 / 👎 and automati
 
 ---
 
-## ✨ Features
+## Features
 
-- ✅ Issue ranking based on community votes (👍 / 👎)
-- 💬 Automatic comments with statistics for each issue
-- 🏆 Central issue with updated leaderboard
-- 🚫 Optional exclusion of issues by label (e.g., `ignore-issue`)
-- 🌐 Multilanguage support (`en`, `es`)
+- Issue ranking based on community votes (👍 / 👎)
+- Automatic comments with statistics for each issue
+- Central issue with updated leaderboard
+- Optional exclusion of issues by label (e.g., `ignore-issue`)
+- Multilanguage support (`en`, `es`)
 
 ---
 
-## 🚀 How to use
+## How to use
 
 ### 1. Create a `.github/workflows/vote-ranking.yml` file
 
@@ -47,7 +47,7 @@ This action uses the built-in `${{ secrets.GITHUB_TOKEN }}` token that GitHub au
 
 ---
 
-## 🔧 Inputs (`inputs`)
+## Inputs (`inputs`)
 
 | Name | Description | Required | Default |
 | ---------------------- | -------------------------------------------------------- | ----------- | -------------- |
@@ -58,29 +58,27 @@ This action uses the built-in `${{ secrets.GITHUB_TOKEN }}` token that GitHub au
 
 ---
 
-## 📦 Output example
+## Output example
 
-```md
 ### 📊 Current issue ranking by votes
 
-| # | Title | 👍 | 👎 | Net |
+| # | Issue | 👍 | 👎 | Total |
 |-----|------------------------|-----|-----|------|
-| #42 | Add dark mode | 12 | 2 | 10 |
-| #36 | Improve documentation | 8 | 1 | 7 |
-```
+| [#42]() | Add dark mode | 12 | 2 | 10 |
+| [#36]() | Improve documentation | 8 | 1 | 7 |
 
 ---
-## 📋 How does it work?
+## How does it work?
 
 Every time someone reacts with 👍 or 👎 to a bot comment:
 
-* 🧵 The comment on that issue is updated with the new vote count.
-* 🏆 The central issue is updated with the global ranking (top 10).
-* 🚫 Issues with the `ignore-issue` tag (or whatever you configure) are ignored.
+* The comment on that issue is updated with the new vote count.
+* The central issue is updated with the global ranking (top 10).
+* Issues with the `ignore-issue` tag (or whatever you configure) are ignored.
 
 ---
 
-## 🛍️ Want to contribute or customize?
+## Want to contribute or customize?
 
 Pull requests and suggestions are welcome!
 You can easily extend this action to support more languages, emojis, or voting strategies.
