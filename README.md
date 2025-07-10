@@ -33,7 +33,7 @@ jobs:
 vote-ranking:
 runs-on: ubuntu-latest
 steps:
-- uses: livrasand/gh-issue-vote-ranking@v1
+- uses: livrasand/gh-issue-vote-ranking@v1.0.1
 with:
 token: ${{ secrets.GITHUB_TOKEN }}
 ranking_issue_number: "1" # Issue number you use to display the ranking
